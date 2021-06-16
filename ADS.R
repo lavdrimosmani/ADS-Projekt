@@ -72,6 +72,6 @@ foreach(i=1:last_page_number) %dopar% {
     
     map(listing_list, get_listing_data) %>%
       bind_rows() %>%
-      write_csv(paste0("../rawdata/",str_pad(i, 4, pad="0"), "_", format(Sys.time(), "%Y-%m-%d-%H%M%S"), ".csv" ) )
+      write_csv(paste0("C:\Users\Lavi\Desktop\ADS_Projekt\",str_pad(i, 4, pad="0"), "_", format(Sys.time(), "%Y-%m-%d-%H%M%S"), ".csv" ) )
   }
 }
